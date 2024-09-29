@@ -23,14 +23,23 @@ document.addEventListener("DOMContentLoaded",()=>{
             };
 
             AddtoCart(selectedProd)
-        })
-    })
+        });
+        carticon .addEventListener=("click",()=>{
+            window.location.href="cart.html"
+        });
+
+    });
 })
 
+
+let carticon=document.querySelector(".carticon")
 
 
 // empty array to store cart Items 
 let cartItems=[]
+
+
+
 
 // 😎😎2.function to add to cart
 
@@ -65,6 +74,8 @@ function LoadCart(){
 }
 LoadCart()
 // 3function to display the Items added in the cart(inside cart-page)
+
+
 // 4function to  increment the quantity of product
 // 5function to  decrement the quantity of product
 // 6function to  delete product
